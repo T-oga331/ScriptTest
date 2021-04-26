@@ -9,34 +9,31 @@ public class Test : MonoBehaviour
     {
         // 要素の個数が5、各要素の値を順番と逆順に表示
         // 要素数5の配列を初期化
-        int[] grade = new int[5];
+        int[] array = new int[5];
 
         // 配列の要素に値を代入
-        grade[0] = 10;
-        grade[1] = 11;
-        grade[2] = 12;
-        grade[3] = 13;
-        grade[4] = 14;
+        array[0] = 808;
+        array[1] = 11;
+        array[2] = 345;
+        array[3] = 2760;
+        array[4] = 567;
 
         // 配列要素の数ぶんだけ繰り返し
-        for (int i = 0; i < 5; i++) 
-        {
-            
-                // 順番に表示する
-                Debug.Log(grade[i]);
+        for (int i = 0; i < 5; i++)
+        {  
+            // 順番に表示する
+            Debug.Log(array[i]);
         }
-        
+
         // 配列の要素の数ぶんだけ繰り返し
-        for (int t = 0; t > 5; t--) 
+        for (int i = 4; i >= 0; i--)
         {
             // 逆順に表示する
-            Debug.Log(grade[t]);
+            Debug.Log(array[i]);
         }
-       
         
     }
     
-
     // Update is called once per frame
     void Update()
     {
